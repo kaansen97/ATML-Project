@@ -66,7 +66,6 @@ def extract_state_dict(state_dict, module_name):
 def set_seed(seed):
     np.random.seed(seed)
     torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
     random.seed(seed)
 
 

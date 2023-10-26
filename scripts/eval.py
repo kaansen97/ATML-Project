@@ -32,7 +32,7 @@ def main() -> None:
     cmd += 'initialization.load_actor_critic=True '
 
     cmd += 'common.epochs=1 '
-    cmd += 'common.device=cuda:0 '
+    cmd += 'common.device=cpu '
     cmd += 'common.do_checkpoint=False '
     cmd += 'common.seed=0 '
 
