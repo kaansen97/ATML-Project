@@ -17,7 +17,9 @@ def main() -> None:
     path_to_config = Path('config') / 'trainer.yaml'
     cfg = OmegaConf.load(path_to_config)
 
-    path_to_checkpoint = Path('checkpoints') / 'last.pt'
+    path_to_checkpoint = Path('/Users/usi/Documents/GitHub/ATML-Project/checkpoints') / 'last.pt'
+    print('path_to_checkpoint:', path_to_checkpoint)
+    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
     assert path_to_checkpoint.is_file()
 
     cmd = f'python src/main.py hydra.run.dir=eval_outputs/{datetime.now().strftime("%Y-%m-%d/%H-%M-%S")} '

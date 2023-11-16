@@ -37,4 +37,4 @@ while [ "$1" != "" ]; do
     shift
 done
 
-python src/play.py hydra.run.dir=. hydra.output_subdir=null +mode="${mode}" +fps="${fps}" +header="${header}" +reconstruction="${reconstruction}" +save_mode="${save_mode}"
+python /Users/usi/Documents/GitHub/ATML-Project/scripts/play.sh hydra.run.dir=. hydra.output_subdir=null +mode="${mode}" +fps="${fps}" +header="${header}" +reconstruction="${reconstruction}" +save_mode="${save_mode}"
