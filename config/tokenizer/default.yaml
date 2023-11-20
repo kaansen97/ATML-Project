@@ -6,7 +6,7 @@ encoder:
   _target_: models.tokenizer.Encoder
   config:
     _target_: models.tokenizer.EncoderDecoderConfig
-    resolution: 16
+    resolution: 64
     in_channels: 3
     z_channels: 512
     ch: 64
